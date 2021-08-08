@@ -11,12 +11,21 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 var replace = require('gulp-replace');
 //const browserSync = require('browser-sync');
-
+// var gulp = require('gulp');
+// gulp.task('default',funtion() {
+//     console.log('asdfsdf')
+// })
+var gulp = require('gulp');
+gulp.task('default', function () { 
+    console.log('Hello Gulp!') 
+});
 
 // File paths
 const files = { 
     scssPath: 'app/scss/**/*.scss',
-    jsPath: 'app/js/**/*.js'
+     jsPath: 'app/js/**/*.js'
+    
+      
 }
 
 // Sass task: compiles the style.scss file into style.css
@@ -44,12 +53,12 @@ function jsTask(){
 
 
 // Cachebust
-function cacheBustTask(){
-    var cbString = new Date().getTime();
-    return src(['index.html'])
-        .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
-        .pipe(dest('.'));
-}
+// function cacheBustTask(){
+//     var cbString = new Date().getTime();
+//     return src(['index.html'])
+//         .pipe(replace(/cb=\d+/g, 'cb=' + cbString))
+//         .pipe(dest('.'));
+// }
 
 // Watch task: watch SCSS and JS files for changes
 // If any change, run scss and js tasks simultaneously
@@ -58,7 +67,7 @@ function watchTask(){
         {interval: 1000, usePolling: true}, //Makes docker work
         series(
             parallel(scssTask, jsTask),
-            cacheBustTask
+            //cacheBustTask
         )
     );    
 }
@@ -68,6 +77,6 @@ function watchTask(){
 // then runs cacheBust, then watch task
 exports.default = series(
     parallel(scssTask, jsTask), 
-    cacheBustTask,
+    //cacheBustTask,
     watchTask
 );

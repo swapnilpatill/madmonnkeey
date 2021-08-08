@@ -598,51 +598,51 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 
 
 // Our custom post type function EXPERTISE
-function create_posttype() {
+// function create_posttype() {
  
-    register_post_type( 'expertise',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Expertise' ),
-                'singular_name' => __( 'Expertise' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'expertise'),
-            'show_in_rest' => true,
+//     register_post_type( 'expertise',
+    
+//         array(
+//             'labels' => array(
+//                 'name' => __( 'Expertise' ),
+//                 'singular_name' => __( 'Expertise' )
+//             ),
+//             'public' => true,
+//             'has_archive' => true,
+//             'rewrite' => array('slug' => 'expertise'),
+//             'show_in_rest' => true,
  
-        )
-    );
-    register_post_type( 'news',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Event' ),
-                'singular_name' => __( 'News' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'news'),
-            'show_in_rest' => true,
+//         )
+//     );
+//     register_post_type( 'news',
+    
+//         array(
+//             'labels' => array(
+//                 'name' => __( 'Event' ),
+//                 'singular_name' => __( 'News' )
+//             ),
+//             'public' => true,
+//             'has_archive' => true,
+//             'rewrite' => array('slug' => 'news'),
+//             'show_in_rest' => true,
  
-        )
-    );
-    register_post_type( 'insights',
-    // CPT Options
-        array(
-            'labels' => array(
-                'name' => __( 'Insights' ),
-                'singular_name' => __( 'Insights' )
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'rewrite' => array('slug' => 'insights'),
-            'show_in_rest' => true,
+//         )
+//     );
+//     register_post_type( 'insights',
+    
+//         array(
+//             'labels' => array(
+//                 'name' => __( 'Insights' ),
+//                 'singular_name' => __( 'Insights' )
+//             ),
+//             'public' => true,
+//             'has_archive' => true,
+//             'rewrite' => array('slug' => 'insights'),
+//             'show_in_rest' => true,
  
-        )
-    );
-}
-// Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
+//         )
+//     );
+// }
+
+// add_action( 'init', 'create_posttype' );
 
