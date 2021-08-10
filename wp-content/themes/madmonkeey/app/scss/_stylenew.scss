@@ -70,11 +70,13 @@ h2 { font-family: 'altgothic', Arial, Helvetica, sans-serif; font-size: 34px; ma
 .main{width: 50%; float:right;
     .section { background: #073c3c;}
 }
-.leftSection{ width: 50%; height: 100%; float: left; display: inline-flex; justify-content: center; align-items: center; flex-wrap: wrap;
+.leftSection{ width: 50%; height: 100%; padding-left: 50px; float: left; display: inline-flex; justify-content: center; align-items: center; flex-wrap: wrap;
     .mianlogowarap{width: 50%; display: block; text-align: center;
         .mlogo{width: 50%;}
         .namelogo{width: 100%;}
     }
+    .wrapsecin{ text-align: center; display: flex; flex-wrap: wrap; justify-content: center; padding:0 25px; width: 100%;}
+    #countdown-gampang{ width: 100%;}
 }
 
 #countdown-gampang{width: 100%;}
