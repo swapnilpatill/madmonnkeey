@@ -43,9 +43,7 @@ get_header(); ?>
             </h1>
             <h2>welcome to Mad Monkeey</h2>
             <p>We Are Launching the site very soon. Please Come Back Later.</p>
-            
                 <?php echo do_shortcode( '[contact-form-7 id="8" title="Subscription"]' ); ?>
-                
              
             <div class="socialmed"></div>
         </div>
