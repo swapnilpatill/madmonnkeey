@@ -2,7 +2,7 @@
 ul,li{list-style-type:none;margin:0}
 img{max-width:100%}
 p + p {margin-top: 15px;}
-body{font-family: 'GothamBook', Arial, Helvetica, sans-serif; color: #231f20; -webkit-font-smoothing:antialiased;-webkit-font-variant-ligatures:no-common-ligatures;font-variant-ligatures:no-common-ligatures;overflow-x:hidden}
+body{font-family: 'Raleway', sans-serif; color: #231f20; -webkit-font-smoothing:antialiased;-webkit-font-variant-ligatures:no-common-ligatures;font-variant-ligatures:no-common-ligatures;overflow-x:hidden}
 .wrapper{float:left;width:100%;position:relative}
 #jpreOverlay {
 	background-color: #000;
@@ -24,19 +24,10 @@ body{font-family: 'GothamBook', Arial, Helvetica, sans-serif; color: #231f20; -w
 #shetterTop{top: 0;}
 #shetterBottom{bottom: 0;}
 .container {max-width: 1100px; width: 98%; margin: 0 auto; padding: 0 10px;}
-@font-face {
-    font-family: 'GothamBold';
-    src: url('../fonts/GothamBold.eot');
-    src: url('../fonts/GothamBold.eot') format('embedded-opentype'),
-         url('../fonts/GothamBold.woff2') format('woff2'),
-         url('../fonts/GothamBold.woff') format('woff'),
-         url('../fonts/GothamBold.ttf') format('truetype'),
-         url('../fonts/GothamBold.svg#GothamBold') format('svg');
-         font-display: "        ";
-}
+
 
 p{font-size: 17px;}
-h2 { font-family: 'altgothic', Arial, Helvetica, sans-serif; font-size: 34px; margin-bottom: 15px; font-weight: normal;
+h2 {  font-size: 34px; margin-bottom: 15px; font-weight: normal;
     @media (max-width:768px) {
         font-size: 28px;
     }
@@ -57,10 +48,11 @@ h2 { font-family: 'altgothic', Arial, Helvetica, sans-serif; font-size: 34px; ma
         bottom: 0;
         left: 33px;
         li{display: block;   position: relative; 
-            &.active{
-                a{color: #e49028;}
-            }
-            a{font-size: 17px; color: #9bd3d3; padding: 15px 20px; width: 100%; text-decoration: none;  white-space: nowrap;  }
+           
+            a{font-size: 17px; color: #9bd3d3; padding: 15px 20px; width: 100%; text-decoration: none;  white-space: nowrap;  
+                &.active{
+                    color: #e49028;
+                }}
         }
     }
 }
@@ -79,11 +71,63 @@ h2 { font-family: 'altgothic', Arial, Helvetica, sans-serif; font-size: 34px; ma
     #countdown-gampang{ width: 100%;}
 }
 
-#countdown-gampang{width: 100%;}
+#countdown-gampang{width: 100%; margin: 6vh 0;}
 .ClassyCountdown-wrapper{display: flex; justify-content: center;
     >div{ margin: 20px; position: relative;height: 136px;width: 136px;
-        .ClassyCountdown-value{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); margin-top: 0 !important; line-height: 1; text-align: center; line-height: 0.6; 
+        .ClassyCountdown-value{ position: absolute; top: 50%; left: 50%; font-family: sans-serif; transform: translate(-50%,-50%); margin-top: 0 !important; line-height: 1; text-align: center; line-height: 0.6; 
             span{font-size: 16px !important;}
         }
     }
+}
+.rightsections{ color: #fff; text-align: center;}
+.comingSoonSection{ display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 0 20px;
+     h1 {font-size: 105px; font-weight: 300; text-transform: uppercase; letter-spacing: 18px;}
+     h2 { font-size: 41px; text-transform: uppercase; margin: 30px 0;}
+     p{font-size: 23px; color: #94b5b5;}
+}
+.subscribeBox { display: flex; max-width:600px; margin: 30px auto 0;
+.emailwrap{background: transparent; border: 0; color: #fff; width: 100%; padding: 20px; border-bottom: solid 1px #117e89; font-size: 22px;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #117e89;
+        opacity: 1; /* Firefox */
+      }
+      
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #117e89;
+      }
+      
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: #117e89;
+      }
+}
+.submitbtn{background: transparent; border: solid 1px #117e89; white-space: nowrap; padding: 20px 40px; font-size: 16px; color: #fff; display: block; border-radius: 50px; cursor: pointer;}
+}
+.socialIcons{display: flex; justify-content: center;
+    li{padding: 10px;
+        img{width: 26px;}
+    }
+}
+
+.contactFormwrap{ display: flex; flex-wrap: wrap; margin: 20px 0;
+    li{width: 100%; padding: 15px;
+        &:first-child, &:nth-child(2) { width: 50%;}
+        
+.submitbtn{background: transparent; border: solid 1px #117e89; white-space: nowrap; padding: 20px 40px; font-size: 16px; color: #fff; display: block; border-radius: 50px; cursor: pointer;}
+
+    }
+    input, textarea{background: transparent; border: 0; color: #fff; width: 100%; padding: 10px; border-bottom: solid 1px #117e89; font-size: 18px;
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #117e89;
+                opacity: 1; /* Firefox */
+              }
+              
+              &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #117e89;
+              }
+              
+              &::-ms-input-placeholder { /* Microsoft Edge */
+                color: #117e89;
+              }
+    }
+
 }

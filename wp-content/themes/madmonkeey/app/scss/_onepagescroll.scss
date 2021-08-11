@@ -42,31 +42,17 @@ body, .onepage-wrapper, html {
   text-align: center;
 }
 .onepage-pagination li a{
-  padding: 10px;
-  width: 4px;
-  height: 4px;
+  margin:20px 10px;
+  width: 16px;
+  height: 16px;
   display: block;
+  border-radius: 50%; background: rgba(255,255,255,0.13);
+  box-shadow: 0 0 0 0px rgba(255,255,255,0);
+  transition: all 0.3s;
+  
   
 }
-.onepage-pagination li a:before{
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(0,0,0,0.85);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-}
-
-.onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
-  background: none;
-  border: 1px solid black;
-  margin-top: -4px;
-  left: 8px;
-}
+.onepage-pagination li a.active{box-shadow: 0 0 0 10px rgba(255,255,255,0.13); background:rgba(255,255,255,1);} 
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
   overflow: auto;

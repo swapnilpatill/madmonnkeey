@@ -144,6 +144,8 @@
       if(settings.pagination == true) {
         $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
         $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
+        $(".onepage-pagination2 li a" + "[data-index='" + index + "']").removeClass("active");
+        $(".onepage-pagination2 li a" + "[data-index='" + next.data("index") + "']").addClass("active");
       }
 
       $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
@@ -179,6 +181,8 @@
       if(settings.pagination == true) {
         $(".onepage-pagination li a" + "[data-index='" + index + "']").removeClass("active");
         $(".onepage-pagination li a" + "[data-index='" + next.data("index") + "']").addClass("active");
+        $(".onepage-pagination2 li a" + "[data-index='" + index + "']").removeClass("active");
+        $(".onepage-pagination2 li a" + "[data-index='" + next.data("index") + "']").addClass("active");
       }
       $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
       $("body").addClass("viewing-page-"+next.data("index"))
@@ -199,6 +203,8 @@
         next.addClass("active")
         $(".onepage-pagination li a" + ".active").removeClass("active");
         $(".onepage-pagination li a" + "[data-index='" + (page_index) + "']").addClass("active");
+        $(".onepage-pagination2 li a" + ".active").removeClass("active");
+        $(".onepage-pagination2 li a" + "[data-index='" + (page_index) + "']").addClass("active");
         $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
         $("body").addClass("viewing-page-"+next.data("index"))
 
@@ -337,12 +343,16 @@
       if (parseInt(init_index) <= total && parseInt(init_index) > 0) {
         $(settings.sectionContainer + "[data-index='" + init_index + "']").addClass("active")
         $("body").addClass("viewing-page-"+ init_index)
-        if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='" + init_index + "']").addClass("active");
+        if(settings.pagination == true) 
+        $(".onepage-pagination li a" + "[data-index='" + init_index + "']").addClass("active");
+        $(".onepage-pagination2 li a" + "[data-index='" + init_index + "']").addClass("active");
+        
 
         next = $(settings.sectionContainer + "[data-index='" + (init_index) + "']");
         if(next) {
           next.addClass("active")
           if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='" + (init_index) + "']").addClass("active");
+          $(".onepage-pagination2 li a" + "[data-index='" + (init_index) + "']").addClass("active");
           $("body")[0].className = $("body")[0].className.replace(/\bviewing-page-\d.*?\b/g, '');
           $("body").addClass("viewing-page-"+next.data("index"))
           if (history.replaceState && settings.updateURL == true) {
@@ -361,10 +371,11 @@
       $(settings.sectionContainer + "[data-index='1']").addClass("active")
       $("body").addClass("viewing-page-1")
       if(settings.pagination == true) $(".onepage-pagination li a" + "[data-index='1']").addClass("active");
+      $(".onepage-pagination2 li a" + "[data-index='1']").addClass("active");
     }
 
     if(settings.pagination == true)  {
-      $(".onepage-pagination li a").click(function (){
+      $(".onepage-pagination li a, .onepage-pagination2 li a").click(function (){
         var page_index = $(this).data("index");
         el.moveTo(page_index);
       });
