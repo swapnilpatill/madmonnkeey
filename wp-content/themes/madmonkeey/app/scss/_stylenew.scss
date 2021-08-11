@@ -100,7 +100,7 @@ h2 {  font-size: 34px; margin-bottom: 15px; font-weight: normal;
         color: #117e89;
       }
 }
-.submitbtn{background: transparent; border: solid 1px #117e89; white-space: nowrap; padding: 20px 40px; font-size: 16px; color: #fff; display: block; border-radius: 50px; cursor: pointer;}
+.submitbtn{background: transparent; border: solid 1px #117e89; white-space: nowrap; padding: 20px 40px; font-size: 16px; color: #fff; display: block; border-radius: 50px; cursor: pointer; width: auto;}
 }
 .socialIcons{display: flex; justify-content: center;
     li{padding: 10px;
@@ -112,7 +112,7 @@ h2 {  font-size: 34px; margin-bottom: 15px; font-weight: normal;
     li{width: 100%; padding: 15px;
         &:first-child, &:nth-child(2) { width: 50%;}
         
-.submitbtn{background: transparent; border: solid 1px #117e89; white-space: nowrap; padding: 20px 40px; font-size: 16px; color: #fff; display: block; border-radius: 50px; cursor: pointer;}
+.submitbtn{background: transparent; width: auto; border: solid 1px #117e89; white-space: nowrap; padding: 20px 40px; font-size: 16px; color: #fff; display: block; border-radius: 50px; cursor: pointer;}
 
     }
     input, textarea{background: transparent; border: 0; color: #fff; width: 100%; padding: 10px; border-bottom: solid 1px #117e89; font-size: 18px;

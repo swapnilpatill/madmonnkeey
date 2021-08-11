@@ -43,10 +43,10 @@ get_header(); ?>
             </h1>
             <h2>welcome to Mad Monkeey</h2>
             <p>We Are Launching the site very soon. Please Come Back Later.</p>
-            <div class="subscribeBox">
-                <input type="text" placeholder="Enter Your Email ID" class="emailwrap">
-                <button type="submit" class="submitbtn">Subscribe Now</button>
-            </div>
+            
+                <?php echo do_shortcode( '[contact-form-7 id="8" title="Subscription"]' ); ?>
+                
+             
             <div class="socialmed"></div>
         </div>
      </section>
@@ -67,20 +67,9 @@ get_header(); ?>
             Contact
            </h1>
            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-           <ul class="contactFormwrap">
-                <li>
-                    <input type="text" placeholder="Name">
-                </li>
-                <li>
-                    <input type="email" placeholder="Email">
-                </li>
-                <li>
-                    <textarea rows="3" placeholder="Message"> </textarea>
-                </li>
-                <li>
-                    <button type="submit" class="submitbtn">Subscribe Now</button>
-                </li>
-           </ul>
+           <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
+
+           
        </div>
     </section>
 </div>
