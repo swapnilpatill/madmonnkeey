@@ -43,7 +43,9 @@ get_header(); ?>
             </h1>
             <h2>welcome to Mad Monkeey</h2>
             <p>We Are Launching the site very soon. Please Come Back Later.</p>
-                <?php echo do_shortcode( '[contact-form-7 id="8" title="Subscription"]' ); ?>
+            <div class="subscribeBox">
+                <?php echo do_shortcode( '[ninja_form id=2]' ); ?>
+            </div>
             <div class="socialmed"></div>
         </div>
      </section>
@@ -64,9 +66,8 @@ get_header(); ?>
             Contact
            </h1>
            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
-           <?php echo do_shortcode( '[contact-form-7 id="7" title="Contact form 1"]' ); ?>
-
-           
+           <div class="contactForm">
+           <?php echo do_shortcode( '[ninja_form id=3]' ); ?></div>           
        </div>
     </section>
 </div>
