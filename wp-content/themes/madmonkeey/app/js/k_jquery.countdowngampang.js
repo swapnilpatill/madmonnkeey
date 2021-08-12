@@ -291,7 +291,7 @@
  						textResponsive: 0.5,
  						days: {
  							gauge: {
- 								thickness: 0.2,
+ 								thickness: 0.15,
  								bgColor: "#185050",
  								fgColor: "#E49028"
  							},
@@ -299,7 +299,7 @@
  						},
  						hours: {
  							gauge: {
- 								thickness: 0.2,
+ 								thickness: 0.15,
  								bgColor: "#185050",
  								fgColor: "#E49028"
  							},
@@ -307,7 +307,7 @@
  						},
  						minutes: {
  							gauge: {
- 								thickness: 0.2,
+ 								thickness: 0.15,
  								bgColor: "#185050",
  								fgColor: "#E49028"
  							},
@@ -315,7 +315,7 @@
  						},
  						seconds: {
  							gauge: {
- 								thickness: 0.2,
+ 								thickness: 0.15,
  								bgColor: "#185050",
  								fgColor: "#E49028"
  							},

@@ -1,10 +1,11 @@
 $(document).ready(function(){
-    
+    if($('body').width() > 1023 ){
         $(".main").onepage_scroll({
           sectionContainer: ".section",
           responsiveFallback: 600,
           loop: true
         });
+    }
           
 
     // var timer; 

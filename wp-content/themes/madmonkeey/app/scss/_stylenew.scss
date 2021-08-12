@@ -72,18 +72,20 @@ h2 {  font-size: 34px; margin-bottom: 15px; font-weight: normal;
 }
 
 #countdown-gampang{width: 100%; margin: 6vh 0;}
-.ClassyCountdown-wrapper{display: flex; justify-content: center;
-    >div{ margin: 20px; position: relative;height: 136px;width: 136px;
+.ClassyCountdown-wrapper{display: flex; justify-content: space-evenly;
+    >div{ position: relative;height: 136px;width: 136px; padding: 5px;
         .ClassyCountdown-value{ position: absolute; top: 50%; left: 50%; font-family: sans-serif; transform: translate(-50%,-50%); margin-top: 0 !important; line-height: 1; text-align: center; line-height: 0.6; 
             span{font-size: 16px !important;}
         }
     }
 }
-.rightsections{ color: #fff; text-align: center;}
+.rightsections{ color: #fff; text-align: center; 
+    >.section {padding-right: 40px;}
+}
 .comingSoonSection{ display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 0 20px;
-     h1 {font-size: 105px; font-weight: 300; text-transform: uppercase; letter-spacing: 18px;}
-     h2 { font-size: 41px; text-transform: uppercase; margin: 30px 0;}
-     p{font-size: 23px; color: #94b5b5;}
+     h1 {font-size: 7.5vw; font-weight: 300; text-transform: uppercase; letter-spacing: 18px;}
+     h2 { font-size: 2.5vw; text-transform: uppercase; margin: 30px 0;}
+     p{font-size: 21px; color: #94b5b5;}
 }
 .contactForm{
     .nf-form-cont{ width: 100%;}
@@ -199,4 +201,18 @@ h2 {  font-size: 34px; margin-bottom: 15px; font-weight: normal;
               }
     }
 
+}
+.csSection{ width: 100%;}
+
+@media (max-width:1023px) {
+    .leftSection{width: 100%; height: auto; padding: 50px 20px;}
+    html, body { overflow: auto !important; height: auto;}
+    .main{ width: 100%;}
+    .rightsections>.section{ padding: 50px 20px;}
+    .leftMenu { display: none !important;}
+    .ClassyCountdown-wrapper>div .ClassyCountdown-value span{ font-size: 12px !important;}
+    .leftSection .wrapsecin{ padding: 0;}
+    .comingSoonSection h1{ font-size: 9vh;}
+    .comingSoonSection h2{ font-size: 4vh;}
+    .contactForm nf-fields-wrap nf-field:first-child, .contactForm nf-fields-wrap nf-field:nth-child(2) { width: 100%;}
 }
