@@ -14,12 +14,12 @@ get_header(); ?>
 <div id="shetterBottom"></div> -->
  
 <header class="leftMenu">
-    <a href="#" class="logowrap"><img src="<?php echo get_template_directory_uri(); ?>/images/madmonkeeylogo.svg" alt=""> </a>
-<ul id="menu" class="onepage-pagination2">
+    <a href="#" class="logowrap"><img src="<?php echo get_template_directory_uri(); ?>/images/madmonkeeylogosmall.svg" alt=""> </a>
+<!-- <ul id="menu" class="onepage-pagination2">
     <li data-menuanchor="firstPage" ><a class="active" data-index="1">Home</a></li>
     <li data-menuanchor="secondPage"  ><a  data-index="2">About Us</a></li>
     <li data-menuanchor="3rdPage"  ><a data-index="3">Contact Us</a></li>
-</ul>
+</ul> -->
 </header> 
 <div class="leftSection">
     <div class="wrapsecin">
@@ -49,7 +49,7 @@ get_header(); ?>
             <div class="socialmed"></div>
         </div>
      </section>
-     <section class="section comingSoonSection">
+     <!-- <section class="section comingSoonSection">
          <div class="csSection">
             <h1>
                 ABOUT
@@ -69,7 +69,7 @@ get_header(); ?>
            <div class="contactForm">
            <?php echo do_shortcode( '[ninja_form id=3]' ); ?></div>           
        </div>
-    </section>
+    </section> -->
 </div>
 
 <?php get_footer(); ?>

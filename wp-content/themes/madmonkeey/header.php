@@ -12,6 +12,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/madmonkeeyfevicon.svg" sizes="16x16" type="image/svg">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/style.css" media="all" />
