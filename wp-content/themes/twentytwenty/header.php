@@ -170,7 +170,9 @@
 					?>
 
 				</div><!-- .header-navigation-wrapper -->
-
+					<a class="cart-customlocation" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/carticon.svg" width="30px" alt="">
+			<?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></a>
 			</div><!-- .header-inner -->
 
 			<?php
@@ -179,7 +181,7 @@
 				get_template_part( 'template-parts/modal-search' );
 			}
 			?>
-
+			
 		</header><!-- #site-header -->
 
 		<?php
